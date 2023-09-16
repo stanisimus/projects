@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body-div">
+      <div class="main-container">
+        <div class="top bar">
+          <h3>calc</h3>
+          <div class="theme">
+            <h5>THEME</h5>
+            <div class="check-bar">
+              <div class="num one">1</div>
+              <div class="num two">2</div>
+              <div class="num three">3</div>
+              <div class="bigger">
+                <div onclick="applyThemeI()" class="circle I clickable"></div>
+                <div onclick="applyThemeII()" class="circle II clickable"></div>
+                <div
+                  onclick="applyThemeIII()"
+                  class="circle III clickable"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mid bar">
+          <h4 id="The-place"></h4>
+        </div>
+        <div class="bottom bar">
+          <div onclick="clickerNum('.num-00')" class="num-00 clickable but g1">
+            7
+          </div>
+          <div onclick="clickerNum('.num-01')" class="num-01 clickable but g1">
+            8
+          </div>
+          <div onclick="clickerNum('.num-02')" class="num-02 clickable but g1">
+            9
+          </div>
+          <div onclick="myDelete()" class="num-03 clickable but g2">DEL</div>
+          <div onclick="clickerNum('.num-10')" class="num-10 clickable but g1">
+            4
+          </div>
+          <div onclick="clickerNum('.num-11')" class="num-11 clickable but g1">
+            5
+          </div>
+          <div onclick="clickerNum('.num-12')" class="num-12 clickable but g1">
+            6
+          </div>
+          <div onclick="add()" class="num-13 clickable but g1">+</div>
+          <div onclick="clickerNum('.num-20')" class="num-20 clickable but g1">
+            1
+          </div>
+          <div onclick="clickerNum('.num-21')" class="num-21 clickable but g1">
+            2
+          </div>
+          <div onclick="clickerNum('.num-22')" class="num-22 clickable but g1">
+            3
+          </div>
+          <div onclick="subtract()" class="num-23 clickable but g1">-</div>
+          <div onclick="clickerNum('.num-30')" class="num-30 clickable but g1">
+            .
+          </div>
+          <div onclick="clickerNum('.num-31')" class="num-31 clickable but g1">
+            0
+          </div>
+          <div onclick="divide()" class="num-32 clickable but g1">/</div>
+          <div onclick="multiply()" class="num-33 clickable but g1">x</div>
+          <div onclick="reset()" class="num-40 clickable but g2">RESET</div>
+          <div onclick="calculate()" class="num-41 clickable but g3">=</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
